@@ -16,8 +16,17 @@ public class Configuration {
 
     private int minimum;
     private int maximum;
+    private String msg;
 
-    public int getMinimum() {
+    public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+
+	public int getMinimum() {
         return minimum;
     }
 

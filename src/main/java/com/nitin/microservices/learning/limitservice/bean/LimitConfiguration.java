@@ -8,13 +8,21 @@ public class LimitConfiguration {
 
     private int maximum;
     private int minimum;
+	private String msg;
 
     //No Argument Constructor
     protected LimitConfiguration(){
 
     }
 
-    public LimitConfiguration(int maximum, int minimum) {
+    public LimitConfiguration(int maximum, int minimum, String msg) {
+		super();
+		this.maximum = maximum;
+		this.minimum = minimum;
+		this.msg = msg;
+	}
+
+	public LimitConfiguration(int maximum, int minimum) {
         super();
         this.maximum = maximum;
         this.minimum = minimum;
@@ -35,4 +43,14 @@ public class LimitConfiguration {
     public void setMinimum(int minimum) {
         this.minimum = minimum;
     }
+    
+    public String getMsg() {
+  		return msg;
+  	}
+
+  	public void setMsg(String msg) {
+  		this.msg = msg;
+  	}
+
+
 }
