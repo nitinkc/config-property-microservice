@@ -35,7 +35,4 @@ public class LimitConfiguration {
     public void setMinimum(int minimum) {
         this.minimum = minimum;
     }
-
-
-
 }
