@@ -1,4 +1,4 @@
-# limits-service
+# Config Properties
 
 
 From Spring initializer
