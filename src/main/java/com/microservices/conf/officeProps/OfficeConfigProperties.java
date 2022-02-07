@@ -1,4 +1,4 @@
-package com.nitin.microservices.learning.limitservice;
+package com.microservices.conf.officeProps;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,16 +9,15 @@ import org.springframework.stereotype.Component;
  * Created by nitin on Sunday, November/17/2019 at 1:32 PM
  *
  * Registering this bean as a Component. @ConfigurationProperties is sufficient
- * to registewr the bean as component. @Component is not needed.
+ * to register the bean as component. @Component is not needed.
  */
 
 @Component
-@ConfigurationProperties("limits-service")
+@ConfigurationProperties(prefix = "office")
 @Getter
 @Setter
-public class Configuration {
-
-    private int minimum;
-    private int maximum;
-    private String msg;
+public class OfficeConfigProperties {
+    private int minHours;
+    private int maxHours;
+    private String duties;
 }
